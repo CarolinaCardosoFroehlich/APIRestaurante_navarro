@@ -9,6 +9,8 @@ public class AppDbContext : DbContext
     // As opções (qual banco usar e onde ele está) vêm do Program.cs
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
+        //dentro do program ele diz que as configuracoes que eu fiz sao pra appdbcontext,
+        //  e ai ele recebe e cria o options e entrega pra orm
     }
 
     // Cada DbSet vira uma tabela no banco que usa o nome dos models como nome da tabela
